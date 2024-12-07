@@ -5,8 +5,7 @@ import routes from '../../../utils/routes';
 
 const NavbarDesktop = () => {
     return (
-        <div>
-            <div className="container mx-auto flex items-center justify-between">
+            <div className="container mx-auto flex items-center justify-between p-4">
                 <div className="flex items-center">
                     <Link to={routes.home}><img src={logo} alt="Logo" className="h-9 w-auto" /></Link>
                 </div>
@@ -17,7 +16,6 @@ const NavbarDesktop = () => {
                     <ButtonCartNav title="Cart" path={routes.cart} />
                 </nav>
             </div>
-        </div>
     );
 };
 

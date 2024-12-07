@@ -6,7 +6,7 @@ import Navbar from './sections/navbar/Navbar'
 function App() {
   return (
     <section className="pt-4">
-      <div className="sticky">
+      <div className="sticky top-0 bg-white z-[100]">
         <Navbar />
       </div>
       <div>
