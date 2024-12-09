@@ -4,10 +4,10 @@ import NavbarDesktop from '../../components/navComponents/navbarDesktop/NavbarDe
 const Navbar = () => {
     return (
         <header className="z-[100]">
-            <div className="block md:hidden">
+            <div className="block sm:hidden">
                 <NavbarMobile />
             </div>
-            <div className="hidden md:block">
+            <div className="hidden sm:block">
                 <NavbarDesktop />
             </div>
         </header>

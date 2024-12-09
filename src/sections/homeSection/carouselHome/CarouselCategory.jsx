@@ -1,5 +1,5 @@
-import CarouselHome from '../../components/carouselComponents/carouselHome/CarouselHome'
-import { items } from '../../utils/images'
+import CarouselHome from '../../../components/carouselComponents/carouselHome/CarouselHome'
+import { items } from '../../../utils/images'
 
 const CarouselCategory = () => {
     return (
