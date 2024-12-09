@@ -1,19 +1,27 @@
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
 
 const CarouselCard = ({ item }) => {
-    const { title, description } = item;
-    return (
-        <div className="w-full sm:w-1/3 max-w-[calc(100%/3)] flex-shrink-0 p-2">
-            <div className="bg-gray-200 rounded-lg shadow-lg p-4 text-center">
-                <h3 className="text-lg font-semibold">{title}</h3>
-                <p className="text-sm text-gray-600">{description}</p>
-            </div>
+  const { url, title } = item;
+
+  return (
+    <div
+      className="flex-shrink-0 mr-4"
+      style={{ minWidth: "17rem" }}  // Máximo 17rem
+    >
+      <div
+        style={{ backgroundImage: `url(${url})` }}
+        className="relative rounded-lg shadow-lg w-full h-[7rem] bg-cover bg-center"
+      >
+        <div className="absolute bottom-0 left-0 w-full bg-[#194813] bg-opacity-80 text-white text-sm py-1 text-center rounded">
+          <p className="truncate px-2">{title}</p>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 CarouselCard.propTypes = {
-    item: PropTypes.object.isRequired,
+  item: PropTypes.object.isRequired,
 };
 
 export default CarouselCard;
