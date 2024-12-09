@@ -6,10 +6,10 @@ import helechos from "./img/Helechos.jpg";
 import suculentas from "./img/Suculentas.jpg";
 
 export const items = [
-    { title: "Tools", url: herramientasPlanta },
-    { title: "Creepers", url: enredaderas },
-    { title: "Climbing Plant", url: trepadoras },
-    { title: "Flowers", url: flores },
-    { title: "Ferns", url: helechos },
-    { title: "Succulents", url: suculentas },
+    { title: "Tools", url: herramientasPlanta, link: '/tools' },
+    { title: "Creepers", url: enredaderas, link: '/creepers' },
+    { title: "Climbing Plant", url: trepadoras, link: '/climbingPlant' },
+    { title: "Flowers", url: flores, link: '/flowers' },
+    { title: "Ferns", url: helechos, link: '/ferns' },
+    { title: "Succulents", url: suculentas, link: '/succulents' },
 ];
