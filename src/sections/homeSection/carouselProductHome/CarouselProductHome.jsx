@@ -1,11 +1,11 @@
-import CarouselProducts from '../../../components/carouselComponents/carouselProducts/CarouselProducts'
+import CarouselProducts from "../../../components/carouselComponents/carouselProducts/CarouselProducts";
 
 const CarouselProductHome = () => {
   return (
     <div>
-        <CarouselProducts />
+      <CarouselProducts />
     </div>
-  )
-}
+  );
+};
 
-export default CarouselProductHome
+export default CarouselProductHome;

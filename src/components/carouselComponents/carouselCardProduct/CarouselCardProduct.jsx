@@ -1,15 +1,27 @@
+import PropTypes from "prop-types";
+import "react-multi-carousel/lib/styles.css";
 
-
-const CarouselCardProduct = ({prod}) => {
-    const {image} =  prod;
-    
+const CarouselCardProduct = ({ prod }) => {
   return (
-    <div className='h-full w-[400px] m-2 flex-shrink-0 cursor-pointer '>
-        <div className="rounded-3xl overflow-hidden mb-4 relative h-[250px]">
-            <img src={image} alt='image product'/>
-        </div>
+    <div className="carousel-card">
+      <h2>{prod.title}</h2>
+      <p>{prod.description}</p>
+      <p><strong>Categoría:</strong> {prod.category}</p>
+      <p><strong>Autor:</strong> {prod.author}</p>
+      <p><strong>Fecha:</strong> {prod.date}</p>
     </div>
-  )
-}
+  );
+};
 
-export default CarouselCardProduct
+CarouselCardProduct.propTypes = {
+  prod: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+    author: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+  }).isRequired,
+};
+
+export default CarouselCardProduct;
